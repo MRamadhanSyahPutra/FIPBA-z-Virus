@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public GameObject gameOverUI;
 
     public bool isDead;
-
+    private Transform headTransform;
 
     private void Start()
     {
@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
             animator.SetTrigger("deathLeft");
 
             Transform headTransform = transform.Find("Mc+Armature/Armature/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head");
+
 
             if (headTransform != null)
             {
